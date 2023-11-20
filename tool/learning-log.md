@@ -33,6 +33,20 @@ What I did:
 ```js
 console.log(snapshot.docs[0].data(), snapshot.docs[0].id)
 ```
+
+### 11/13/23 Goal: Learning functions from firestore
+
+##### getDocs(database)
+
+A function from the module firestore, it is used for fetch the data from the database.
+
+##### addDoc(database, {data})
+
+It is used for adding the data to the database.
+
+##### deleteDoc(doc(database, collection, docId))
+
+It is used for deleting a specfic doc from the database. Note that you will need to import doc **and** deleteDoc in order for it to work.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
