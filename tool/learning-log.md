@@ -47,6 +47,12 @@ It is used for adding the data to the database.
 ##### deleteDoc(doc(database, collection, docId))
 
 It is used for deleting a specfic doc from the database. Note that you will need to import doc **and** deleteDoc in order for it to work.
+
+### 11/26/23 
+
+##### onSnapshot(data, function(){codes to execute})
+
+When updating the database, it will automatically resend a new data without loading when fetching the database. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
