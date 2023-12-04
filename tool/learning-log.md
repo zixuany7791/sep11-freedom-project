@@ -47,6 +47,29 @@ It is used for adding the data to the database.
 ##### deleteDoc(doc(database, collection, docId))
 
 It is used for deleting a specfic doc from the database. Note that you will need to import doc **and** deleteDoc in order for it to work.
+
+### 12/3/23
+
+##### query(db, where(filter arguments))
+
+It is used for filtering out some of the data when fetching the entire database.
+
+A simple example:
+```js
+const colRef = collection(db, 'books') //entire database of that section
+
+const q = query(colRef, where("author", "==", "Name")) // filter
+
+getDocs(q) // change from colRef to q where you can get filtered database.
+    .then(
+      (snapshot) => {
+        let books = []; // an array storing data from the database 
+
+          books.push({ ...snapshot.docs[0].data(), id: snapshot.docs[0].id})
+          console.log(snapshot.docs[0].data(), snapshot.docs[0].id)
+        })
+
+```
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
