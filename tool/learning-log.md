@@ -48,6 +48,12 @@ It is used for adding the data to the database.
 
 It is used for deleting a specfic doc from the database. Note that you will need to import doc **and** deleteDoc in order for it to work.
 
+### 11/26/23
+
+##### onSnapshot(data, function(){codes to execute})
+
+When updating the database, it will automatically resend a new data without loading when fetching the database.
+
 ### 12/3/23
 
 ##### query(db, where(filter arguments))
@@ -63,13 +69,14 @@ const q = query(colRef, where("author", "==", "Name")) // filter
 getDocs(q) // change from colRef to q where you can get filtered database.
     .then(
       (snapshot) => {
-        let books = []; // an array storing data from the database 
+        let books = []; // an array storing data from the database
 
           books.push({ ...snapshot.docs[0].data(), id: snapshot.docs[0].id})
           console.log(snapshot.docs[0].data(), snapshot.docs[0].id)
         })
 
 ```
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
