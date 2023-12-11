@@ -76,6 +76,24 @@ getDocs(q) // change from colRef to q where you can get filtered database.
         })
 
 ```
+### 12/8/23 Goal: Able to delete a data without ID.
+
+* Needs to understand JSON Object
+* For users, you need to know what data there are so I need to display those data on the webpage.
+
+What I did:
+```js
+getDocs(colRef)
+    .then(
+      (snapshot) => {
+        let books = [];
+        snapshot.docs.forEach((doc) => {
+          books.push({ ...doc.data(), id: doc.id})
+          document.getElementById("data").innerHTML = document.getElementById("data").innerHTML + `<p>The author is ${doc.data().author} and the title is ${doc.data().title}.</p>`; // fetching all the data into HTML webpage
+          } )
+        })
+```
+* Next step: the computer able to search for the id and delete a certain document that user put.
 
 <!--
 * Links you used today (websites, videos, etc)
