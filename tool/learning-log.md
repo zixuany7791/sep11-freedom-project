@@ -95,6 +95,53 @@ getDocs(colRef)
 ```
 * Next step: the computer able to search for the id and delete a certain document that user put.
 
+### 12/11/23 Goal: complete the next step
+
+* Since the deleteDocs require the document's ID to delete a specific document, I will need to somehow find the ID using title and author.
+  * Thinking of using for loop to iterate every document in the `books` array and get the id of that document.
+
+What I did:
+```js
+let length = books.length;
+  for(let i = 0; i < books.length; i++){ // iterate through the database to match the user input
+    if (deleteBook.author.value == books[i].author && deleteBook.title.value == books[i].title) {
+      deleteDoc(doc(db, 'book', books[i].id))
+    }
+  }
+```
+
+* Next Step: Create an error message
+
+### 12/15/23 Goal: complete the next step
+
+* Used try statement to create an error message
+
+What I did:
+```js
+// delete document
+const deleteBook = document.querySelector('.delete')
+deleteBook.addEventListener('submit', function(event) {
+  event.preventDefault()
+  let length = books.length;
+  try {
+    for(let i = 0; i < books.length; i++){ // iterate through the database to match the user input
+      if (deleteBook.author.value == books[i].author && deleteBook.title.value == books[i].title) {
+        deleteDoc(doc(db, 'book', books[i].id))
+        document.getElementById("error").innerHTML = ""; //clearing the error message if user input works
+      } else{
+        throw "invalid input"; // gives an error message
+      }
+    }
+  }
+  catch(err){
+    document.getElementById("error").innerHTML = err // putting the error message to HTML webpage
+  }
+  deleteBook.reset() // the input will get back to it's default value after the user click submit.
+})
+```
+
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
