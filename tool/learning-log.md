@@ -163,8 +163,8 @@ What I did:
 
   // sign in with google popup
   const signIn = document.querySelector('.signInButton')
-  signIn.addEventListener('click', function(event) { //
-    event.preventDefault()
+  signIn.addEventListener('click', function(event) { // when the user click the button, the following code executes
+    event.preventDefault() 
     signInWithPopup(auth, provider)
       .then((result) => {
         // This gives you a Google Access Token. You can use it to access the Google API.
