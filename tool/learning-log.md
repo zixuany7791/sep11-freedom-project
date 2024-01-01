@@ -154,6 +154,9 @@ What I did:
 ```html
 <button class="signInButton">Please Sign In</button>
 <script type="module">
+  import {
+    GoogleAuthProvider, getAuth, signInWithPopup
+  } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js'
   const auth = getAuth()
   auth.useDeviceLanguage();
   const provider = new GoogleAuthProvider();
