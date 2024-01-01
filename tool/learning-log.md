@@ -188,11 +188,11 @@ What I did:
 </script>
 ```
 
-### 12/31/23 Goal: trying out multiple pages
+### 12/31/23 Goal: Trying out multiple pages
 
-* Trying out import / export
+* Learning to use import / export so the files are connected.
 * I put firebaseConfig in a separate file call firebaseConfig.js and exported the firebaseConfig, then having every webpage to import the firebaseConfig (very waste of time but looks organized)
-* Create a separate html page for sign in and then able to see the database after the user has signed in.
+* Create a separate html page for sign in and then redirect to the webpage where the database were shown after signing in.
 
 What I did:
 
@@ -245,6 +245,8 @@ What I did:
 ### 1/1/23
 * By commenting out codes to see what isn't working, I realized that `type="module"` in script is the reason why signIn is not defined.
 * To solve that, I export signIn and then import it in html like this: `<button onclick="import('./home.js').then((module) => module.signIn())">Hi, Please Log in </button>`
+
+* Then I try to rework onAuthStateChanged 
 
 
 
