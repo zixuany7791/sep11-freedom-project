@@ -246,9 +246,29 @@ What I did:
 * By commenting out codes to see what isn't working, I realized that `type="module"` in script is the reason why signIn is not defined.
 * To solve that, I export signIn and then import it in html like this: `<button onclick="import('./home.js').then((module) => module.signIn())">Hi, Please Log in </button>`
 
-* Then I try to rework onAuthStateChanged 
+* I added another onAuthStateChanged on the index.js (where user suppose to be at after signing in) to make sure that if the user are not sign in, they are redirected to the login page. However after I added onAuthStateChanged, the page starts to refreshes constantly like it is in a infinite loop.
 
+What I did:
+```js
+// index.js
+import { authObserver } from './home.js'
 
+authObserver()
+```
+```js
+// home.js
+function authObserver() {
+    onAuthStateChanged(auth, (user) =>{
+        if (user){
+          window.location.href = 'index.html'
+        } else {
+          window.location.href = 'home.html'
+        }
+    })
+}
+authObserver()
+export { authObserver }
+```
 
 <!--
 * Links you used today (websites, videos, etc)
