@@ -233,8 +233,19 @@ What I did:
           // ...
       });
   }
+   onAuthStateChanged(auth, (user) =>{
+        if (user){
+          window.location.href = 'index.html'
+        }
+    })
 </script>
 ```
+* Result: Not working because signIn is not defined (no idea why)
+
+### 1/1/23
+* By commenting out codes to see what isn't working, I realized that `type="module"` in script is the reason why signIn is not defined.
+* To solve that, I export signIn and then import it in html like this: `<button onclick="import('./home.js').then((module) => module.signIn())">Hi, Please Log in </button>`
+
 
 
 <!--
