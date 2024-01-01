@@ -163,7 +163,7 @@ What I did:
 
   // sign in with google popup
   const signIn = document.querySelector('.signInButton')
-  signIn.addEventListener('click', function(event) {
+  signIn.addEventListener('click', function(event) { //
     event.preventDefault()
     signInWithPopup(auth, provider)
       .then((result) => {
@@ -194,7 +194,12 @@ What I did:
 * I put firebaseConfig in a separate file call firebaseConfig.js and exported the firebaseConfig, then having every webpage to import the firebaseConfig (very waste of time but looks organized)
 * Create a separate html page for sign in and then able to see the database after the user has signed in.
 
+What I did:
 
+```html
+<script type="module" src="home.js"></script>
+<button onclick="signIn()">Hi, Please Log in </button>
+```
 
 
 <!--
