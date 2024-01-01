@@ -152,7 +152,7 @@ It is used to update a value of a document that already exist in the
 * Trying out with signInWithPopUp
 What I did:
 ```html
-
+<button class="signInButton">Please Sign In</button>
 <script type="module">
   const auth = getAuth()
   auth.useDeviceLanguage();
@@ -182,7 +182,6 @@ What I did:
         // ...
       });
   })
-
 </script>
 ```
 
