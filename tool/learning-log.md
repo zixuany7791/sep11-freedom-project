@@ -149,7 +149,8 @@ It is used to update a value of a document that already exist in the
 ### 12/29/23 Goal: Learn Auth
 
 * Need to import the Auth provider in firebase/auth for the one that you set up in console.firebase.google.com
-* I used signInWithPopUp since it seems to be very simple
+* Trying out with signInWithPopUp
+
 
 
 
