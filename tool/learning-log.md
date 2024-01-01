@@ -188,6 +188,13 @@ What I did:
 </script>
 ```
 
+### 12/31/23 Goal: trying out multiple pages
+
+* Trying out import / export
+* I put firebaseConfig in a separate file call firebaseConfig.js and exported the firebaseConfig, then having every webpage to import the firebaseConfig (very waste of time but looks organized)
+* Create a separate html page for sign in and then able to see the database after the user has signed in.
+
+
 
 
 <!--
