@@ -164,7 +164,7 @@ What I did:
   // sign in with google popup
   const signIn = document.querySelector('.signInButton')
   signIn.addEventListener('click', function(event) { // when the user click the button, the following code executes
-    event.preventDefault() 
+    event.preventDefault()
     signInWithPopup(auth, provider)
       .then((result) => {
         // This gives you a Google Access Token. You can use it to access the Google API.
@@ -199,6 +199,41 @@ What I did:
 ```html
 <script type="module" src="home.js"></script>
 <button onclick="signIn()">Hi, Please Log in </button>
+<script type="module">
+  import { app } from './firebaseConfig.js'
+
+  import {
+      GoogleAuthProvider, getAuth, signInWithPopup, signOut, onAuthStateChanged
+  } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js'
+
+
+  const auth = getAuth()
+  auth.useDeviceLanguage();
+  const provider = new GoogleAuthProvider();
+
+  // sign in with google popup
+  function signIn() {
+      signInWithPopup(auth, provider)
+      .then((result) => {
+          // This gives you a Google Access Token. You can use it to access the Google API.
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          // The signed-in user info.
+          const user = result.user;
+          // IdP data available using getAdditionalUserInfo(result)
+          // ...
+      }).catch((error) => {
+          // Handle Errors here.
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // The email of the user's account used.
+          const email = error.customData.email;
+          // The AuthCredential type that was used.
+          const credential = GoogleAuthProvider.credentialFromError(error);
+          // ...
+      });
+  }
+</script>
 ```
 
 
