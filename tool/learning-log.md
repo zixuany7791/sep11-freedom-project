@@ -272,7 +272,8 @@ export { authObserver }
 
 ### 1/7/24
 
-* Added Sign Out button 
+* Added Sign Out button
+
 What I did:
 ```js
 
