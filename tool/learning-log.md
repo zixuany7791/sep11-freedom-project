@@ -270,9 +270,9 @@ authObserver()
 export { authObserver }
 ```
 
-### 1/7/24 Goal: logout!
+### 1/7/24
 
-*
+* Added Sign Out button 
 What I did:
 ```js
 
