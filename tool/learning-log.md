@@ -270,6 +270,10 @@ authObserver()
 export { authObserver }
 ```
 
+### 1/7/24
+
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
