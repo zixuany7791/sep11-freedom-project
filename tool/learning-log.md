@@ -272,7 +272,24 @@ export { authObserver }
 
 ### 1/7/24 Goal: logout!
 
+*
+What I did:
+```js
 
+
+//signOut
+
+const logOut = document.getElementById("signOut")
+loug.addEventListener("click", function(event) => {
+  signout(auth)
+  .then(() => {
+    console.log("You have successfully log out.")
+  })
+  .catch((err) => {
+    console.log(err.message)
+  })
+})
+```
 
 
 <!--
