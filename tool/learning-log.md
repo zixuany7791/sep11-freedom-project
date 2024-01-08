@@ -270,7 +270,8 @@ authObserver()
 export { authObserver }
 ```
 
-### 1/7/24
+### 1/7/24 Goal: logout!
+
 
 
 
