@@ -304,7 +304,11 @@ function signOutFunction () {
 
 * I decided to use a variable to determine that they found the document to delete so I can return an error outside of the loop rather than using an else statement inside the loop.
 
+* Second error happens, it says that the author value was undefined in which I don't understand why it happens because I still deleted the book that it suppose to delete.
 
+* By console.log pretty much everything, I realized that the loop is still running even after it deleted the document already.
+
+* I have solved the problem by using `{ break; }` in the if statement so it stops the loop from running because it doesn't need to run anymore. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
