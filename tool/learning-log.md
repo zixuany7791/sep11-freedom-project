@@ -297,8 +297,8 @@ function signOutFunction () {
 * I did some random testing and finds out that somehow you only need one authStateChange observer, or if you have two then it will repeat twice. EVEN IF IT IS IN DIFFERENT FILES!!!
 * Found out that deleting doc didn't really work as it should be somehow and haven't found out why.
 
-### 1/29/24
-* I reworked a bit on the deleted document section. 
+### 1/29/24 Goal: Rework delete document
+* 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
