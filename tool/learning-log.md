@@ -302,7 +302,9 @@ function signOutFunction () {
 
 * I tried using while loop to see if anything changed and it apparently didn't.
 
-* 
+* I decided to use a variable to determine that they found the document to delete so I can return an error outside of the loop rather than using an else statement inside the loop.
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
