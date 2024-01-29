@@ -298,6 +298,10 @@ function signOutFunction () {
 * Found out that deleting doc didn't really work as it should be somehow and haven't found out why.
 
 ### 1/29/24 Goal: Rework delete document
+* After I played around with the delete document, I found out that it wasn't actually looping because the else statement I put inside the loop makes it so that it only runs one time because else statement break the for loop.
+
+* I tried using while loop to see if anything changed and it apparently didn't.
+
 * 
 <!--
 * Links you used today (websites, videos, etc)
