@@ -298,7 +298,7 @@ function signOutFunction () {
 * Found out that deleting doc didn't really work as it should be somehow and haven't found out why.
 
 ### 1/29/24
-* 
+* I reworked a bit on the deleted document section. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
