@@ -308,7 +308,43 @@ function signOutFunction () {
 
 * By console.log pretty much everything, I realized that the loop is still running even after it deleted the document already.
 
-* I have solved the problem by using `{ break; }` in the if statement so it stops the loop from running because it doesn't need to run anymore. 
+* I have solved the problem by using `{ break; }` in the if statement so it stops the loop from running because it doesn't need to run anymore.
+
+3/3/24 **React**
+
+* The computer needs to have node.js first doing anything with react.
+
+* We use `npx creat-react-app appName` to get react starter files.
+
+* Use `npm start` instead of `http-server` to test website.
+
+* In `appName/src/index.js`, ReactDOM.render() is where all the react will run at.
+
+* jsx files is a way where it allows programms to type javascript and html without switching sides.
+
+Example:
+```jsx
+// a very simple function that contains html codes.
+function App() {
+  return (
+    <div className="App">
+      <h2>Hello World</h2>
+      <ul>
+        <li>I am bored</li>
+        <li>I am tired</li>
+        <li>I want to sleep</li>
+      </ul>
+    </div>
+  );
+}
+
+
+// Then you can call the function in html
+<App />
+```
+
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
