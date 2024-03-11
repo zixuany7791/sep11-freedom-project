@@ -343,7 +343,24 @@ function App() {
 <App />
 ```
 
+3/10/24
 
+* Inside of the src folder, you can create a folder called components and put small pieces of code in different jsx files. It is pretty much same thing as my App.js where you export the function and you imported in index.js and render it with ReactDOM
+
+components/Hello.jsx
+```jsx
+function Hello() {
+    return (
+        <div>
+           <h1>Hello World</h1>
+        </div>
+    )
+}
+
+export default Hello;
+```
+
+* You can include CDN in public/index.html
 
 <!--
 * Links you used today (websites, videos, etc)
