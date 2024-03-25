@@ -343,7 +343,7 @@ function App() {
 <App />
 ```
 
-3/10/24
+### 3/10/24
 
 * Inside of the src folder, you can create a folder called components and put small pieces of code in different jsx files. It is pretty much same thing as my App.js where you export the function and you imported in index.js and render it with ReactDOM
 
@@ -359,6 +359,38 @@ function Hello() {
 
 export default Hello;
 ```
+
+### 3/24/24
+
+* React Router is a framework that allows you to show different pages in react in a very simple way.
+
+* I followed this (youtube video)[https://www.youtube.com/watch?v=Ul3y1LXxzdU)] to learn how to use browser router
+
+* `Link` from `react-router-dom`is another way of making a hyperlink
+
+* `Route` is where you make connection to the website pages
+
+```js
+function App() {
+  return (
+    <div className="App">
+     <BrowserRouter>
+          <ul>
+            <li>
+              <Link to="/Book">Books</Link>
+            </li>
+          </ul>
+        <Routes>
+            <Route path="/Book" element={<Book/>} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
+```
+
+* Apparently when you are redirecting to a new page, react will create a new file for you and the content will be what you put in the file that you connected with route.
+
 
 * You can include CDN in public/index.html
 
