@@ -394,6 +394,20 @@ function App() {
 
 * You can include CDN in public/index.html
 
+### 3/31/24
+
+* Attempting to merge react with firebase. Starting with login
+
+* Created firebase.js and put all the setup code in there.
+
+* in login.jsx, I imported firebase.js and attempt to add `signInWithPopUp` after adding addEventListener on the buttons
+
+* Failed to work because addEventListener didn't get anything, thinking if it is because the html contents are in jsx therefore when the computer is trying to find this element, it didn't exist.
+
+* UseRef seems to be an alternative solution to find an element in html. But the way it is being used is confusing. . .
+
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
