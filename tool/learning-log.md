@@ -406,6 +406,21 @@ function App() {
 
 * UseRef seems to be an alternative solution to find an element in html. But the way it is being used is confusing. . .
 
+### 4/14/2024
+
+* Another alternative solution for querySelector in react: `onClick={functionName}`
+
+* However, when I click on the button that suppose to pop up a google sign in page, it appears and disappeared almost immediately and it didn't sign me in.
+
+* With that confusion, I decided to try another authentication method: `signInWithEmailAndPassword`.
+
+* It is pretty simple to use, all you need is two boxes for user to type in email and password and when they press login button, it sends the data to firebase and allows the user to login.
+
+* Maybe try separating creating account and logging into account?
+
+
+
+
 
 
 <!--
