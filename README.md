@@ -4,19 +4,21 @@ by **Zixuan Yu**
 ## Context
 I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
 
-For my project, I chose to independently study **X** in order to help me make **X**.
+For my project, I chose to independently study **Firebase** in order to help me make **RiceGrades**, a grading website.
 
 ## Links
 
-[Product]()
+[Product](https://ricegrades.pages.dev/)
 
-[Presentation]()
+[Presentation](https://docs.google.com/presentation/d/1iDwtYyNoZOTWqBq0-eZfyW1XwlIfCvrQiYxQs7fg9p0/edit#slide=id.p)
 
 ## Implications
 ##### PROS
-* 
+* Can motivate students to keep a high average on their grades.
 ##### CONS
-* 
+* Not visually appealing
+* Instructions may confuse users on how RiceGrades works
+* There is no way for parents to communicate with the teacher in this website.
 
 
 ## Blog
