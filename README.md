@@ -4,6 +4,7 @@ by **Zixuan Yu**
 ## Context
 I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
 
+## Content
 For my project, I chose to independently study **Firebase** in order to help me make **RiceGrades**, a grading website.
 
 ## Links
